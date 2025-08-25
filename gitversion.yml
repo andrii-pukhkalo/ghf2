@@ -1,0 +1,11 @@
+mode: Mainline
+commit-message-incrementing: Disabled
+
+branches:
+  main:
+    regex: ^main$
+    increment: Patch
+  feature:
+    regex: ^(feature|feat|fix|chore|refactor)\/
+    tag: alpha
+    increment: Minor
