@@ -6,8 +6,7 @@ branches:
     regex: ^main$
     increment: Patch
   feature:
-    regex: ^(.+\/)?(feature|feat)\/
-    tag: alpha
+    regex: ^(?:.+/)?(?:feature|feat)[/-](?<BranchName>.+)
     increment: Minor
   hotfix:
     regex: ^(.+\/)?(hotfix|fix)\/
